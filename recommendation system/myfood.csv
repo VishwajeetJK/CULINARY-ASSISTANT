@@ -1,0 +1,16 @@
+food_id,title,canteen_id,price,num_orders,category,avg_rating,num_rating,tags
+1,Hot and Sour Soup,1,30,35,chinese,3.9,10,"veg, spicy"
+2,Wontons,1,25,40,chinese,3.8,15,veg
+3,Hakka Noodles,1,25,10,chinese,3,10,"veg, spicy"
+4,Fried Rice,1,30,25,chinese,2.5,5,"veg, healthy"
+5,Tofu Stir Fry,1,60,50,chinese,4.6,30,"veg, healthy"
+6,Paneer Tikka,1,30,35,indian,3.9,10,"veg, spicy"
+7,Crispy Corn,1,25,40,indian,3.8,15,veg
+8,Pav Bhaji,1,25,10,indian,3,10,"veg, spicy"
+9,Roti,1,30,25,indian,2.5,5,"veg, healthy"
+10,Dhal,1,60,50,indian,4.6,30,"veg, healthy"
+11,Burger,1,30,35,american,3.9,10,"veg, spicy"
+12,French Fries,1,25,40,american,3.8,15,veg
+13,Pizza,1,25,10,american,3,10,"veg, spicy"
+14,Fish n Chips,1,30,25,american,2.5,5,"non veg, healthy"
+15,Greek Salad,1,60,50,american,4.6,30,"veg, healthy"

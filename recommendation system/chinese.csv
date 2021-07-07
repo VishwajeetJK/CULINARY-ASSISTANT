@@ -1,0 +1,6 @@
+food_id,title,canteen_id,price,num_orders,category,avg_rating,num_rating,tags
+1,Hot and Sour Soup,1,30,35,maggi,3.9,10,"veg, spicy"
+2,Wontons,1,25,40,maggi,3.8,15,veg
+3,Hakka Noodles,1,25,10,maggi,3,10,"veg, spicy"
+4,Fried Rice,1,30,25,maggi,2.5,5,"veg, healthy"
+5,Tofu Stir Fry,1,60,50,Punjabi,4.6,30,"veg, healthy"
