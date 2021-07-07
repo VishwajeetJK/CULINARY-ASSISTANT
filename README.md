@@ -38,6 +38,10 @@ that it requires a lot of computing power and our laptops computing power cannot
 those standards. So we have used Kaggle.com to utilize the GPU available there. If we face
 any problem while training on this huge dataset we have a couple of datasets which are
 smaller than this, which can be used to train our model.
+     
+<p align="center">
+    <image src="screenshots/4.png" width="700">
+</p>
 
 Data Modelling: 
 Object recognition or cooking court recognition using Convolutional
