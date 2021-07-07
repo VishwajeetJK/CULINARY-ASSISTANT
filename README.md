@@ -72,3 +72,9 @@ e','Waffles']
     <image src="screenshots/6.png" width="450">
     <image src="screenshots/7.png" width="450">
 </p>
+## After clicking on the predict button:
+   
+<p align="center">
+    <image src="screenshots/8.png" width="450">
+    <image src="screenshots/9.png" width="450">
+</p>
