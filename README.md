@@ -43,3 +43,5 @@ category having 1000 images.
 Cakes','French_Fries','French_Toast','Fried_Rice','Garlic_Bread','Ice_Cream','Macaroni_And
 _Cheese','Nachos','Omelette','Pancakes',’'Pizza','Samosa','Spring_Rolls','Strawberry_Shortcak
 e','Waffles']
+
+[FOOD RECOMMENDATION SYSTEM DATASET](https://docs.google.com/spreadsheets/d/1DP_M59KzT8rOp1Fe6OSbwNijgCmgcKq5Rbe9gk11znw/edit?usp=sharing)
