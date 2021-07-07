@@ -66,3 +66,9 @@ _Cheese','Nachos','Omelette','Pancakes',’'Pizza','Samosa','Spring_Rolls','Stra
 e','Waffles']
 
 [FOOD RECOMMENDATION SYSTEM DATASET](https://docs.google.com/spreadsheets/d/1DP_M59KzT8rOp1Fe6OSbwNijgCmgcKq5Rbe9gk11znw/edit?usp=sharing)
+        
+# 1st Example:
+<p align="center">
+    <image src="screenshots/6.png" width="450">
+    <image src="screenshots/7.png" width="450">
+</p>
