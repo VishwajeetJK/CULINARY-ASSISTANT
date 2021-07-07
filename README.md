@@ -15,3 +15,31 @@ also be identifying the APIs which will give us the recipe of the dishes. Finall
 make the front end for the web app which should be user friendly and very intuitive in
 nature. It shall attempt to request the APIs with an image of the dish and display the
 recipe and recommendations back on itself.
+
+Data Acquisition: 
+A dataset is used to train the CNN model consisting of various
+categories. The custom dataset which was made considered the data from FOOD 101 dataset
+which consists of 101 classes and each class consists of 1,000 images. So a total of 1,01,000
+images are available. This is a great thing as for deep learning architectures to generalize well
+we need a large dataset and here we already have it. But this has it's pros and cons which is
+that it requires a lot of computing power and our laptops computing power cannot match
+those standards. So we have used Kaggle.com to utilize the GPU available there. If we face
+any problem while training on this huge dataset we have a couple of datasets which are
+smaller than this, which can be used to train our model.
+
+Data Modelling: 
+Object recognition or cooking court recognition using Convolutional
+Neural Networks and the search for the nearest neighbors in a record of all the images. This
+combination helps to find the correct recipe more likely, as the top-5 categories of the CNN
+are compared to the next-neighbor category with ranked correlation.
+
+Datasets Referred:
+The most widely used dataset is the Food Images (Food-101) dataset, which is a subset of the
+actual dataset uploaded by K Scott Mader on Kaggle. This dataset contains sets of images of
+different dishes from around the world. There are approximately 101,000 images in total. The
+subset of the dataset that we have used is divided into the following 20 categories with each
+category having 1000 images.
+['Cheesecake','Chicken_Curry','Chicken_Wings','Chocolate_Cake','Chocolate_Mousse','Cup_
+Cakes','French_Fries','French_Toast','Fried_Rice','Garlic_Bread','Ice_Cream','Macaroni_And
+_Cheese','Nachos','Omelette','Pancakes',’'Pizza','Samosa','Spring_Rolls','Strawberry_Shortcak
+e','Waffles']
