@@ -6,7 +6,7 @@ that the user can upload the photograph of the dish and the model will return th
 of the dish.
 
 <p align="center">
-    <image src="screenshots/1.png" width="450">
+    <image src="screenshots/1.png" width="650">
 </p>
 
 ● The second objective on which we will be focussing is the recommendation system
@@ -15,7 +15,7 @@ photograph which the user has uploaded. This will help the user get insights abo
 other side dishes which are often taken with that main dish.
       
  <p align="center">
-    <image src="screenshots/2.png" width="450">
+    <image src="screenshots/2.png" width="650">
 </p>
 
 ● We will also be creating Rest APIs to host our models on the web app and we will
@@ -25,7 +25,7 @@ nature. It shall attempt to request the APIs with an image of the dish and displ
 recipe and recommendations back on itself.
       
  <p align="center">
-    <image src="screenshots/3.png" width="450">
+    <image src="screenshots/3.png" width="650">
 </p>
 
 Data Acquisition: 
@@ -48,6 +48,11 @@ Object recognition or cooking court recognition using Convolutional
 Neural Networks and the search for the nearest neighbors in a record of all the images. This
 combination helps to find the correct recipe more likely, as the top-5 categories of the CNN
 are compared to the next-neighbor category with ranked correlation.
+    
+<p align="center">
+    <image src="screenshots/5.1.png" width="450">
+    <image src="screenshots/5.2.png" width="450">
+</p>
 
 Datasets Referred:
 The most widely used dataset is the Food Images (Food-101) dataset, which is a subset of the
