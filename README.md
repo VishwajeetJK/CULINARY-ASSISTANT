@@ -79,7 +79,7 @@ e','Waffles']
     <image src="screenshots/9.png" width="450">
 </p>
         
-# 2st Example:
+# 2nd Example:
 <p align="center">
     <image src="screenshots/10.png" width="450">
     <image src="screenshots/11.png" width="450">
