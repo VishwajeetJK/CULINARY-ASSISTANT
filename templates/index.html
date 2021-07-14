@@ -1,0 +1,59 @@
+<!DOCTYPE html> <html>
+<head>
+<title>AI Project</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFV y38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css"> </head>
+<body>
+<div class="heading">
+<h1>AI FOOD Project</h1>
+<p>Here you can upload an image of a dish, and we can find the recipe of the dish for you
+and also give you some recommendations which go well with the main dish.</p> <p style="text-align:left;">To do this you have to follow some simple steps:</p> <ol style="text-align:left;">
+<li>Click on browse</li>
+<li>Select the image of the main dish</li>
+<li>Click on OK to upload it</li>
+<li>Click on the predict button</li>
+<li>After clicking on the predict button you can find the dish name and the recommendations of food items that go well with it</li> <li>Click on the recipe button to find out the recipe of the dish</li>
+</ol>
+</div>
+<div class="main">
+<div class="image">
+<img height="300" width="350" id="selected-image" src="" style="display:block;"/>
+</div>
+<input id="image-selector" type="file">
+<button class="btn btn-outline-success" id="predict-button">Predict</button>
+</div>
+<div class="output">
+<table class="table table-bordered"> <tr>
+<td><p style="font-weight:bold">Predictions</p></td>
+<td colspan="2"><p style="font-weight:bold" id="prediction"></p></td> </tr>
+<tr>
+<td><p style="font-weight:bold">Recipe</p></td>
+<td colspan="2"><p style="font-weight:normal" id="rec"></p></td> </tr>
+<tr>
+<td><p style="font-weight:bold">Ingredients</p></td>
+<td colspan="2"><p style="font-weight:normal" id="ing"></p></td>
+</tr> <tr>
+<td><p style="font-weight:bold">Recommendation</p></td> <td>
+<img src="" height="100" width="100" id="rec1">
+<p style="font-weight:bold" id="recom1"></p></td> <td>
+<img src="" height="100" width="100" id="rec2">
+<p style="font-weight:bold" id="recom2"></p></td> </tr>
+</table>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <script>
+let base64Image; $("#image-selector").change(function() {
+let reader = new FileReader(); reader.onload = function(e) { let dataURL = reader.result;
+$('#selected-image').attr("src", dataURL);
+base64Image = dataURL.replace("data:image/png;base64,", ""); console.log(base64Image);
+} reader.readAsDataURL($("#image-selector")[0].files[0]); $("#prediction").text("");
+}); $("#predict-button").click(function() {
+var message = { image: base64Image
+}
+console.log(message);
+$.post("http://127.0.0.1:5000/predict", JSON.stringify(message), function(data) {
+$("#prediction").text(data.prediction); $("#recom1").text(data.rec1); $("#recom2").text(data.rec2); $("#rec").html(data.rec); $("#ing").html(data.ing); $('#rec1').attr("src", data.img1); $('#rec2').attr("src", data.img2);
+}); });
+</script> </body> </html>
